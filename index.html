@@ -2,113 +2,295 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chenuli Vihansa | Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chenuli Vihansa - Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <header class="header" id="header">
+        <a href="#" class="logo">Chenuli.<span class="animate" style="--i:1;"></span></a>
+        <div id="menu-icon-container">
+            <div id="menu-icon" class='bx bx-menu'><span class="animate" style="--i:2;"></span></div>
+        </div>
+        
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+            <span class="active-nav"></span>
+        </nav>
+    </header>
 
-<header>
-    <nav class="navbar">
-        <h2 class="logo">Chenuli</h2>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="home show-animate" id="home">
+        <div class="home-content">
+            <h1>Hello, I'm <span>Chenuli Vihansa</span></h1>
+            <h3>Computer Science Undergraduate | Aspiring Software Engineer</h3>
+            <p>Passionate about creating clean and effective Web & Mobile applications.</p>
 
-<section id="home" class="home">
-    <div class="home-content">
-        <h1>Hi, I'm <span>Chenuli Vihansa</span></h1>
-        <h3>Computer Science Undergraduate</h3>
-        <p>UI/UX Enthusiast | Future Data Scientist | Web Developer</p>
-        <div class="buttons">
-            <a href="#contact" class="btn">Hire Me</a>
-            <a href="#" class="btn outline">Download CV</a>
+            <div class="btn-box">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn">Hire Me</a>
+                <a href="C:\xampp\htdocs\Portfolio\Blue Simple Professional CV Resume.pdf" class="btn" download><i class='bx bx-download'></i> My CV</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <div class="img-container">
+                <img src="image1.jpg" alt="Profile Picture">
+                <span class="circle-spin"></span>
+            </div>
+        </div>
+
+        <div class="home-sci">
+            <a href="https://github.com/chenuli-v" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/chenuliv" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/chenuli-vihansa-2a7967340" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-img">
+            <img src="image2.jpg" alt="About Image">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <p>I'm Chenuli Vihansa, a Computer Science Undergraduate at <span class="highlight">KDU (General Sir John Kotelawala Defence University)</span> with a strong interest in Web development, Mobile application development, UI/UX design, and emerging technologies. I enjoy transforming ideas into clean, functional, and user-friendly digital experiences.</p>
+            
+            <p>I'm a dedicated learner with strengths in problem-solving, teamwork, creativity, and quick learning. I love exploring new tools, frameworks, and technologies that help me improve as a developer. My goal is to become a skilled software developer who can build modern, efficient, and impactful applications that deliver real value and help solve real-world problems.</p>
+            
+            <div class="btn-box">
+                <button class="btn" id="read-more-button">Read More</button>
+            </div>
+            
+            <div id="additional-content" style="display: none;">
+                <h3>My Goals</h3>
+                <p>I aim to continuously expand my technical expertise while contributing to meaningful projects that make a positive impact. I'm particularly interested in full-stack development and creating seamless user experiences across web and mobile platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>My Technical <span>Skill Palette</span></h2>
+        </div>
+
+        <div class="skills-box">
+            <div class="skill-item one">
+                <i class='bx bxl-python'></i>
+                <p>Python</p>
+            </div>
+            <div class="skill-item six">
+                <i class='bx bxl-java'></i>
+                <p>Java</p>
+            </div>
+            <div class="skill-item two">
+                <i class='bx bxl-html5'></i>
+                <p>HTML5</p>
+            </div>
+            <div class="skill-item three">
+                <i class='bx bxl-css3'></i>
+                <p>CSS3</p>
+            </div>
+            <div class="skill-item four">
+                <i class='bx bxl-javascript'></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-item four">
+                <i class='bx bxl-php'></i>
+                <p>PHP</p>
+            </div>
+            <div class="skill-item five">
+                <i class='bx bxl-react'></i>
+                <p>React</p>
+            </div>
+            <div class="skill-item five">
+                <i class='bx bxl-flutter'></i>
+                <p>Flutter</p>
+            </div>
+            <div class="skill-item five">
+                <i class='bx bxl-typescript'></i>
+                <p>TypeScript</p>
+            </div>
+            <div class="skill-item seven">
+                <i class='bx bxl-git'></i>
+                <p>Git</p>
+            </div>
+            <div class="skill-item seven">
+                <i class='bx bxl-figma'></i>
+                <p>Figma</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="soft-skills-section">
+        <h2>Skills That <span>Shine</span></h2>
+        <div class="soft-skills-container">
+            <div class="soft-skill">
+                <i class='bx bx-chat'></i>
+                <h3>Communication</h3>
+                <div class="progress-circle" data-value="80">
+                    <span class="progress-value">80%</span>
+                </div>
+            </div>
+            <div class="soft-skill">
+                <i class='bx bx-brain'></i>
+                <h3>Critical Thinking</h3>
+                <div class="progress-circle" data-value="85">
+                    <span class="progress-value">85%</span>
+                </div>
+            </div>
+            <div class="soft-skill">
+                <i class='bx bx-target-lock'></i>
+                <h3>Leadership</h3>
+                <div class="progress-circle" data-value="80">
+                    <span class="progress-value">80%</span>
+                </div>
+            </div>
+            <div class="soft-skill">
+                <i class='bx bx-group'></i>
+                <h3>Teamwork</h3>
+                <div class="progress-circle" data-value="95">
+                    <span class="progress-value">95%</span>
+                </div>
+            </div>
+            <div class="soft-skill">
+                <i class='bx bx-refresh'></i>
+                <h3>Adaptability</h3>
+                <div class="progress-circle" data-value="90">
+                    <span class="progress-value">90%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-list">
+            <div class="project-item">
+                <span class="project-tag">Hardware</span>
+                <h3>Smart Whiteboard Cleaning Robot</h3>
+                <p>A robot that detects written areas on a whiteboard and cleans only those areas. Includes a custom smart lock system with fingerprint sensor and LEDs.</p>
+            </div>
+
+            <div class="project-item">
+                <span class="project-tag">In Development</span>
+                <h3>Tour Booking & Transportation System</h3>
+                <p>A mobile-based system designed for vehicle booking, scheduling, and managing tourist rides for local businesses.</p>
+            </div>
+
+            <div class="project-item">
+                <span class="project-tag">Web Development</span>
+                <h3>Portfolio Website</h3>
+                <p>Fully responsive personal portfolio showcasing skills, projects, and experience with modern design.</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="experience" id="experience">
+    <h2 class="heading">Experience & <span>Education</span></h2>
+    <div class="experience-row">
+        <div class="experience-column">
+            <h3 class="column-title">Education</h3>
+            <div class="experience-box">
+                <div class="experience-content">
+                    <div class="content">
+                        <h3>BSc (Hons) in Computer Science</h3>
+                        <div class="day"><i class='bx bxs-calendar'></i> 2025 – 2029</div>
+                        <h4>General Sir John Kotelawala Defence University (KDU)</h4>
+                        <p>Focused on software development, algorithms, databases, system design, and modern computing technologies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="column-title">Certifications</h3>
+            <div class="experience-box">
+                <div class="experience-content">
+                    <div class="content">
+                        <h3>CCNA: Introduction to Networks</h3>
+                        <div class="day"><i class='bx bxs-calendar'></i> May 2025</div>
+                        <h4>Cisco Networking Academy</h4>
+                        <p>Completed networking fundamentals covering protocols, routing, switching, IP addressing, and troubleshooting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="column-title">Experience</h3>
+            <div class="experience-box">
+                <div class="experience-content">
+                    <div class="content">
+                        <h3>Freelance Software & Web Developer</h3>
+                        <div class="day"><i class='bx bxs-briefcase'></i> 2024 – Present</div>
+                        <p>Providing end-to-end software and web development solutions for small businesses, startups, and individual clients. Focused on building fast, modern, and user-friendly digital products.</p>
+                        <div class="key-areas">
+                            <strong>Key Areas:</strong>
+                            <ul>
+                                <li>Full-Stack Web Development</li>
+                                <li>Custom Software Solutions</li>
+                                <li>UI/UX-Focused Web Applications</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    </section>
 
-    <div class="home-img">
-        <img src="images/profile.png" alt="profile">
-    </div>
-</section>
+    
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <div class="contact-form">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="email" id="emailAddress" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="tel" id="mobileNumber" placeholder="Mobile Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="emailSubject" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box">
+                <button class="btn" id="submit-btn">Submit</button>
+            </div>
+        </div>
+    </section>
 
-<section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-        I am a first-year Computer Science undergraduate with strong interests in UI/UX design and Data Science.
-        I have experience in C++, OOP, Web Development, SQL, and real-world software & hardware projects.
-    </p>
-</section>
+    
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Chenuli Vihansa | All Rights Reserved.</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
 
-<section id="skills" class="section bg">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-box">C++</div>
-        <div class="skill-box">OOP</div>
-        <div class="skill-box">HTML</div>
-        <div class="skill-box">CSS</div>
-        <div class="skill-box">JavaScript</div>
-        <div class="skill-box">SQL</div>
-        <div class="skill-box">UI / UX Design</div>
-        <div class="skill-box">Data Science Basics</div>
-    </div>
-</section>
-
-<section id="projects" class="section">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-        <h3>Fingerprint Smart Lock System</h3>
-        <p>IoT-based door lock using fingerprint authentication with Bluetooth alerts.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Tour Transportation Management System</h3>
-        <p>Mobile-based system to manage tourism vehicle bookings and drivers.</p>
-    </div>
-
-    <div class="project-card">
-        <h3>Whiteboard Cleaning Robot</h3>
-        <p>Hardware + software project for automatic board cleaning.</p>
-    </div>
-</section>
-
-<section id="experience" class="section bg">
-    <h2>Experience</h2>
-
-    <div class="experience-box">
-        <h3>Founder — RUSOFT (Pvt) Ltd</h3>
-        <p>2025 – Present</p>
-        <p>Providing software, web development, and IT solutions to clients.</p>
-    </div>
-
-    <div class="experience-box">
-        <h3>Freelance Web Developer</h3>
-        <p>2024 – Present</p>
-        <p>Developed responsive portfolio websites and business websites.</p>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <h2>Contact Me</h2>
-
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-</section>
-
-<footer>
-    <p>© 2025 Chenuli Vihansa | All Rights Reserved</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
