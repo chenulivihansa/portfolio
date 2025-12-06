@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chenuli Vihansa - Portfolio</title>
+    <meta name="description" content="Portfolio of Chenuli Vihansa - Computer Science Undergraduate and Software Developer">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -12,9 +13,9 @@
 <body>
     
     <header class="header" id="header">
-        <a href="#" class="logo">Chenuli.<span class="animate" style="--i:1;"></span></a>
+        <a href="#home" class="logo">Chenuli.<span></span></a>
         <div id="menu-icon-container">
-            <div id="menu-icon" class='bx bx-menu'><span class="animate" style="--i:2;"></span></div>
+            <i id="menu-icon" class='bx bx-menu'></i>
         </div>
         
         <nav class="navbar" id="navbar">
@@ -24,11 +25,10 @@
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
-            <span class="active-nav"></span>
         </nav>
     </header>
 
-    <section class="home show-animate" id="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h1>Hello, I'm <span>Chenuli Vihansa</span></h1>
             <h3>Computer Science Undergraduate | Aspiring Software Engineer</h3>
@@ -37,28 +37,36 @@
             <div class="btn-box">
                 <a href="#projects" class="btn">View Projects</a>
                 <a href="#contact" class="btn">Hire Me</a>
-                <a href="D:\portfolio\Blue Simple Professional CV Resume.pdf" class="btn" download><i class='bx bx-download'></i> My CV</a>
+                <a href="Blue Simple Professional CV Resume.pdf" class="btn" download="Chenuli_Vihansa_CV.pdf">
+                    <i class='bx bx-download'></i> My CV
+                </a>
             </div>
         </div>
 
         <div class="home-img">
             <div class="img-container">
-                <img src="image1.jpg" alt="Profile Picture">
+                <img src="image1.jpg" alt="Chenuli Vihansa Profile Picture">
                 <span class="circle-spin"></span>
             </div>
         </div>
 
         <div class="home-sci">
-            <a href="https://github.com/chenuli-v" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="https://www.instagram.com/chenuliv" target="_blank"><i class='bx bxl-instagram'></i></a>
-            <a href="https://www.linkedin.com/in/chenuli-vihansa-2a7967340" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/chenuli-v" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.instagram.com/chenuliv" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/chenuli-vihansa-2a7967340" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class='bx bxl-linkedin'></i>
+            </a>
         </div>
     </section>
 
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
         <div class="about-img">
-            <img src="image2.jpg" alt="About Image">
+            <img src="image2.jpg" alt="Chenuli Vihansa About Image">
             <span class="circle-spin"></span>
         </div>
         <div class="about-content">
@@ -130,7 +138,6 @@
         </div>
     </section>
 
-    
     <section class="soft-skills-section">
         <h2>Skills That <span>Shine</span></h2>
         <div class="soft-skills-container">
@@ -172,7 +179,6 @@
         </div>
     </section>
 
-    
     <section class="projects" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="projects-list">
@@ -196,98 +202,118 @@
         </div>
     </section>
 
-    
     <section class="experience" id="experience">
-    <h2 class="heading">Experience & <span>Education</span></h2>
-    <div class="experience-row">
-        <div class="experience-column">
-            <h3 class="column-title">Education</h3>
-            <div class="experience-box">
-                <div class="experience-content">
-                    <div class="content">
-                        <h3>BSc (Hons) in Computer Science</h3>
-                        <div class="day"><i class='bx bxs-calendar'></i> 2025 – 2029</div>
-                        <h4>General Sir John Kotelawala Defence University (KDU)</h4>
-                        <p>Focused on software development, algorithms, databases, system design, and modern computing technologies.</p>
+        <h2 class="heading">Experience & <span>Education</span></h2>
+        <div class="experience-row">
+            <div class="experience-column">
+                <h3 class="column-title">Education</h3>
+                <div class="experience-box">
+                    <div class="experience-content">
+                        <div class="content">
+                            <h3>BSc (Hons) in Computer Science</h3>
+                            <div class="day"><i class='bx bxs-calendar'></i> 2025 – 2029</div>
+                            <h4>General Sir John Kotelawala Defence University (KDU)</h4>
+                            <p>Focused on software development, algorithms, databases, system design, and modern computing technologies.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <h3 class="column-title">Certifications</h3>
-            <div class="experience-box">
-                <div class="experience-content">
-                    <div class="content">
-                        <h3>CCNA: Introduction to Networks</h3>
-                        <div class="day"><i class='bx bxs-calendar'></i> May 2025</div>
-                        <h4>Cisco Networking Academy</h4>
-                        <p>Completed networking fundamentals covering protocols, routing, switching, IP addressing, and troubleshooting.</p>
+                <h3 class="column-title">Certifications</h3>
+                <div class="experience-box">
+                    <div class="experience-content">
+                        <div class="content">
+                            <h3>CCNA: Introduction to Networks</h3>
+                            <div class="day"><i class='bx bxs-calendar'></i> May 2025</div>
+                            <h4>Cisco Networking Academy</h4>
+                            <p>Completed networking fundamentals covering protocols, routing, switching, IP addressing, and troubleshooting.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <h3 class="column-title">Experience</h3>
-            <div class="experience-box">
-                <div class="experience-content">
-                    <div class="content">
-                        <h3>Freelance Software & Web Developer</h3>
-                        <div class="day"><i class='bx bxs-briefcase'></i> 2024 – Present</div>
-                        <p>Providing end-to-end software and web development solutions for small businesses, startups, and individual clients. Focused on building fast, modern, and user-friendly digital products.</p>
-                        <div class="key-areas">
-                            <strong>Key Areas:</strong>
-                            <ul>
-                                <li>Full-Stack Web Development</li>
-                                <li>Custom Software Solutions</li>
-                                <li>UI/UX-Focused Web Applications</li>
-                            </ul>
+                <h3 class="column-title">Experience</h3>
+                <div class="experience-box">
+                    <div class="experience-content">
+                        <div class="content">
+                            <h3>Freelance Software & Web Developer</h3>
+                            <div class="day"><i class='bx bxs-briefcase'></i> 2024 – Present</div>
+                            <p>Providing end-to-end software and web development solutions for small businesses, startups, and individual clients. Focused on building fast, modern, and user-friendly digital products.</p>
+                            <div class="key-areas">
+                                <strong>Key Areas:</strong>
+                                <ul>
+                                    <li>Full-Stack Web Development</li>
+                                    <li>Custom Software Solutions</li>
+                                    <li>UI/UX-Focused Web Applications</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
-    
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <div class="contact-form">
+        
+        <!-- Contact Info Cards -->
+        <div class="contact-info">
+            <div class="info-card">
+                <i class='bx bx-envelope'></i>
+                <h3>Email</h3>
+                <p>chenuliv@gmail.com</p>
+            </div>
+            <div class="info-card">
+                <i class='bx bxl-github'></i>
+                <h3>GitHub</h3>
+                <p>@chenuli-v</p>
+            </div>
+            <div class="info-card">
+                <i class='bx bx-map'></i>
+                <h3>Location</h3>
+                <p>Sri Lanka</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contact-form">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name *" required autocomplete="name">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="email" id="emailAddress" placeholder="Email Address" required>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address *" required autocomplete="email">
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="input-box">
                 <div class="input-field">
-                    <input type="tel" id="mobileNumber" placeholder="Mobile Number" required>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Mobile Number *" required autocomplete="tel">
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" id="emailSubject" placeholder="Email Subject" required>
+                    <input type="text" id="emailSubject" name="emailSubject" placeholder="Email Subject *" required>
                     <span class="focus"></span>
                 </div>
             </div>
             <div class="textarea-field">
-                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <textarea id="message" name="message" cols="30" rows="10" placeholder="Your Message *" required></textarea>
                 <span class="focus"></span>
             </div>
             <div class="btn-box">
-                <button class="btn" id="submit-btn">Submit</button>
+                <button type="submit" class="btn" id="submit-btn">
+                    <i class='bx bx-paper-plane'></i> Send Message
+                </button>
             </div>
-        </div>
+        </form>
     </section>
 
-    
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2025 by Chenuli Vihansa | All Rights Reserved.</p>
         </div>
         <div class="footer-icontop">
-            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#home" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
