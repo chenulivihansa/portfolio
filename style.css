@@ -25,6 +25,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 .header {
@@ -47,7 +48,7 @@ body {
 }
 
 .logo {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: var(--text-color);
     text-decoration: none;
@@ -134,7 +135,7 @@ body {
 }
 
 .home-content h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.2;
@@ -145,7 +146,7 @@ body {
 }
 
 .home-content h3 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.7px var(--accent-color);
@@ -156,14 +157,14 @@ body {
 }
 
 .home-content p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin: 2rem 0 4rem;
     line-height: 1.8;
 }
 
 .btn-box {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -173,11 +174,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    padding: 1.2rem 2.8rem;
+    padding: 1.2rem 2.4rem;
     background: var(--accent-color);
     border: 2px solid var(--accent-color);
     border-radius: 0.8rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: var(--bg-color);
     text-decoration: none;
     font-weight: 600;
@@ -243,8 +244,8 @@ body {
 
 .home-img .img-container {
     position: relative;
-    width: 40rem;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
     border-radius: 50%;
     padding: 0.8rem;
     background: linear-gradient(45deg, var(--accent-color), var(--text-color));
@@ -286,6 +287,7 @@ body {
 .home-sci {
     position: absolute;
     bottom: 4rem;
+    left: 9%;
     display: flex;
     gap: 2rem;
 }
@@ -294,12 +296,12 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     background: transparent;
     border: 0.2rem solid var(--accent-color);
     border-radius: 50%;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--accent-color);
     text-decoration: none;
     transition: all 0.5s ease;
@@ -342,7 +344,7 @@ body {
 }
 
 .heading {
-    font-size: 5rem;
+    font-size: 4.5rem;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -354,8 +356,8 @@ body {
 
 .about-img {
     position: relative;
-    width: 35rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -375,7 +377,7 @@ body {
 }
 
 .about-content p {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     line-height: 1.8;
     margin-bottom: 2rem;
     text-align: justify;
@@ -392,7 +394,7 @@ body {
 }
 
 #additional-content h3 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: var(--accent-color);
     margin-bottom: 1.5rem;
 }
@@ -468,7 +470,7 @@ body {
 }
 
 .soft-skills-section h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align: center;
     margin-bottom: 5rem;
 }
@@ -602,7 +604,7 @@ body {
 }
 
 .project-item h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
     color: var(--text-color);
 }
@@ -635,7 +637,7 @@ body {
 }
 
 .column-title {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: var(--accent-color);
     margin-bottom: 2rem;
     margin-top: 4rem;
@@ -699,7 +701,7 @@ body {
 }
 
 .experience-content h3 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
     color: var(--text-color);
     font-weight: 600;
@@ -716,7 +718,7 @@ body {
 }
 
 .experience-content h4 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 1.5rem;
     font-weight: 500;
@@ -761,41 +763,6 @@ body {
     line-height: 1.6rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .experience {
-        padding: 5rem 5%;
-    }
-
-    .column-title {
-        font-size: 2.4rem;
-        margin-top: 3rem;
-    }
-
-    .experience-content h3 {
-        font-size: 2rem;
-    }
-
-    .experience-content h4 {
-        font-size: 1.6rem;
-    }
-
-    .experience-content p,
-    .key-areas ul li {
-        font-size: 1.4rem;
-    }
-
-    .experience-box {
-        padding-left: 2rem;
-    }
-
-    .experience-content::before {
-        left: -2.9rem;
-        width: 1.5rem;
-        height: 1.5rem;
-    }
-}
-
 .contact {
     padding: 10rem 9%;
     background: var(--bg-color);
@@ -823,7 +790,7 @@ body {
 .input-field {
     position: relative;
     flex: 1;
-    min-width: 30rem;
+    min-width: 100%;
 }
 
 .input-field input,
@@ -881,10 +848,11 @@ body {
     flex-wrap: wrap;
     padding: 3rem 9%;
     background: var(--secondary-bg);
+    gap: 2rem;
 }
 
 .footer-text p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .footer-icontop a {
@@ -914,42 +882,370 @@ body {
     color: var(--accent-color);
 }
 
-
 @media (max-width: 1200px) {
     html {
         font-size: 55%;
     }
+    
+    .header {
+        padding: 2rem 5%;
+    }
+    
+    .home, .about, .skills, .soft-skills-section, .projects, .experience, .contact {
+        padding: 8rem 5%;
+    }
+    
+    .home-sci {
+        left: 5%;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
+    html {
+        font-size: 52%;
+    }
+    
     .header {
         padding: 2rem 4%;
     }
     
-    section {
-        padding: 10rem 4% 5rem;
+    .home {
+        flex-direction: column;
+        padding: 12rem 4% 4rem;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .home-content {
+        max-width: 100%;
+        order: 2;
+    }
+    
+    .home-img {
+        order: 1;
+    }
+    
+    .home-img .img-container {
+        width: 30rem;
+        height: 30rem;
+    }
+    
+    .home-sci {
+        position: static;
+        justify-content: center;
+        margin-top: 3rem;
+        order: 3;
+    }
+    
+    .about {
+        padding: 8rem 4%;
+    }
+    
+    .about-img {
+        width: 28rem;
+        height: 28rem;
+    }
+    
+    .skills, .soft-skills-section, .projects, .experience, .contact {
+        padding: 8rem 4%;
+    }
+    
+    .skills-box {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 2rem;
+    }
+    
+    .projects-list {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    
+    .header {
+        padding: 1.5rem 4%;
+    }
+    
+    .logo {
+        font-size: 2.2rem;
+    }
+    
+    #menu-icon-container {
+        display: block;
+    }
+    
+    #menu-icon {
+        font-size: 2.8rem;
+    }
+    
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--bg-color);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .navbar.active {
+        display: flex;
+    }
+    
+    .navbar a {
+        display: block;
+        margin: 1.5rem 0;
+        margin-left: 0;
+        font-size: 2rem;
+        width: 100%;
+        padding: 1rem 0;
+        border-bottom: 0.1rem solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .navbar a:last-child {
+        border-bottom: none;
     }
     
     .home {
-        padding: 10rem 4% 2rem;
+        padding: 12rem 4% 4rem;
+        gap: 2rem;
+    }
+    
+    .home-content h1 {
+        font-size: 3.5rem;
+    }
+    
+    .home-content h3 {
+        font-size: 2.2rem;
+    }
+    
+    .home-content p {
+        font-size: 1.5rem;
+    }
+    
+    .btn-box {
+        gap: 1rem;
+        justify-content: center;
+    }
+    
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .home-img .img-container {
+        width: 25rem;
+        height: 25rem;
+    }
+    
+    .heading {
+        font-size: 3.5rem;
+    }
+    
+    .about-img {
+        width: 25rem;
+        height: 25rem;
+    }
+    
+    .about-content p {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .skills-box {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .skill-item {
+        padding: 2rem 1.5rem;
+    }
+    
+    .skill-item i {
+        font-size: 4rem;
+    }
+    
+    .skill-item p {
+        font-size: 1.4rem;
+    }
+    
+    .soft-skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+        gap: 3rem;
+    }
+    
+    .progress-circle {
+        width: 13rem;
+        height: 13rem;
+    }
+    
+    .progress-circle::before {
+        width: 10rem;
+        height: 10rem;
+    }
+    
+    .projects-list {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .project-item {
+        padding: 2.5rem;
+    }
+    
+    .project-item h3 {
+        font-size: 2rem;
+    }
+    
+    .experience-box {
+        padding-left: 2rem;
+    }
+    
+    .experience-content::before {
+        left: -2.9rem;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .column-title {
+        font-size: 2.2rem;
+    }
+    
+    .experience-content h3 {
+        font-size: 2rem;
+    }
+    
+    .experience-content h4 {
+        font-size: 1.6rem;
+    }
+    
+    .experience-content p,
+    .key-areas ul li {
+        font-size: 1.5rem;
+    }
+    
+    .input-field {
+        min-width: 100%;
+    }
+    
+    .footer {
+        padding: 2rem 4%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .footer-text p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 45%;
+    }
+    
+    .header {
+        padding: 1.5rem 3%;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .home {
+        padding: 10rem 3% 3rem;
+    }
+    
+    .home-content h1 {
+        font-size: 3rem;
+    }
+    
+    .home-content h3 {
+        font-size: 2rem;
+        -webkit-text-stroke: 0.5px var(--accent-color);
+    }
+    
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .home-img .img-container {
+        width: 22rem;
+        height: 22rem;
+    }
+    
+    .home-sci a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 1.8rem;
+    }
+    
+    .heading {
+        font-size: 3rem;
     }
     
     .about, .skills, .soft-skills-section, .projects, .experience, .contact {
-        padding: 10rem 4%;
+        padding: 6rem 3%;
+    }
+    
+    .about-img {
+        width: 22rem;
+        height: 22rem;
+    }
+    
+    .skills-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .soft-skills-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .progress-circle {
+        width: 12rem;
+        height: 12rem;
+    }
+    
+    .progress-circle::before {
+        width: 9rem;
+        height: 9rem;
+    }
+    
+    .progress-value {
+        font-size: 2rem;
     }
 }
-@media(max-width:768px){
-    .home{
-        flex-direction:column;
-        text-align:center;
-    }
 
-    .home-img img{
-        margin-top:30px;
-        width:220px;
+@media (max-width: 360px) {
+    html {
+        font-size: 42%;
     }
-
-    .nav-links{
-        display:none;
+    
+    .home-img .img-container {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .about-img {
+        width: 20rem;
+        height: 20rem;
+    }
+    
+    .skills-box {
+        grid-template-columns: 1fr;
     }
 }
