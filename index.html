@@ -9,6 +9,13 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,10 +35,15 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
             <a href="#contact">Contact</a>
         </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <i class='bx bx-moon' id="theme-icon"></i>
+        </button>
     </header>
 
     <section class="home" id="home">
@@ -185,28 +197,95 @@
         </div>
     </section>
 
+    <section class="services" id="services">
+    <h2 class="heading">My <span>Services</span></h2>
+    <p class="services-subtitle">Delivering professional solutions tailored to your needs</p>
+    
+    <div class="services-container">
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive and beautiful user interfaces that provide seamless user experiences across all devices.</p>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Building responsive, fast, and modern web applications using the latest technologies and best practices.</p>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Mobile Development</h3>
+            <p>Developing cross-platform mobile applications with Flutter for iOS and Android platforms.</p>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>Full-Stack Development</h3>
+            <p>End-to-end development solutions from database design to front-end implementation.</p>
+        </div>
+    </div>
+    </section>
+
     <section class="projects" id="projects">
-        <h2 class="heading">My <span>Projects</span></h2>
-        <div class="projects-list">
-            <div class="project-item">
-                <span class="project-tag">Hardware</span>
-                <h3>Smart Whiteboard Cleaning Robot</h3>
-                <p>A robot that detects written areas on a whiteboard and cleans only those areas. Includes a custom smart lock system with fingerprint sensor and LEDs.</p>
+    <h2 class="heading">My <span>Projects</span></h2>
+    <div class="projects-list">
+        <div class="project-item">
+            <div class="project-image">
+                <img src="image3.jpg" alt="Smart Door Lock">
+                <span class="project-tag">Hardware + IoT</span>
             </div>
-
-            <div class="project-item">
-                <span class="project-tag">In Development</span>
-                <h3>Tour Booking & Transportation System</h3>
-                <p>A mobile-based system designed for vehicle booking, scheduling, and managing tourist rides for local businesses.</p>
-            </div>
-
-            <div class="project-item">
-                <span class="project-tag">Web Development</span>
-                <h3>Portfolio Website</h3>
-                <p>Fully responsive personal portfolio showcasing skills, projects, and experience with modern design.</p>
+            <div class="project-content">
+                <h3>Fingerprint Smart Door Lock with Alert System</h3>
+                <p>An advanced biometric security system featuring fingerprint authentication, real-time WiFi notifications, tamper detection, and manual PIN backup. Includes solenoid lock mechanism controlled via ESP32 with mobile app integration.</p>
+                <div class="project-tech">
+                    <span>ESP32</span>
+                    <span>IoT</span>
+                    <span>Biometric</span>
+                    <span>WiFi</span>
+                </div>
+                <a href="Hardware Project.docx" download class="project-link">
+                    <i class='bx bx-download'></i> Download Research Paper
+                </a>
             </div>
         </div>
-    </section>
+
+        <div class="project-item">
+            <div class="project-image">
+                <img src="image4.jpg" alt="Tour Booking System">
+                <span class="project-tag">In Development</span>
+            </div>
+            <div class="project-content">
+                <h3>Tour Booking & Transportation System</h3>
+                <p>A comprehensive mobile-based system for vehicle booking, scheduling, and managing tourist rides. Features admin, customer, and driver roles with real-time tracking and payment integration.</p>
+                <div class="project-tech">
+                    <span>Flutter</span>
+                    <span>PHP</span>
+                    <span>MySQL</span>
+                    <span>Real-time Tracking</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-image">
+                <img src="image11.jpg" alt="Portfolio Website">
+                <span class="project-tag">Web Development</span>
+            </div>
+            <div class="project-content">
+                <h3>Portfolio Website</h3>
+                <p>Fully responsive personal portfolio showcasing skills, projects, and experience with modern design, dark mode, and smooth animations.</p>
+                <div class="project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>Responsive</span>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
 
     <section class="experience" id="experience">
         <h2 class="heading">Experience & <span>Education</span></h2>

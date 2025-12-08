@@ -13,6 +13,17 @@
     --secondary-bg: #112e42;
     --text-color: #ededed;
     --accent-color: #00abf0;
+    --border-color: rgba(0, 171, 240, 0.3);
+    --hover-bg: rgba(0, 171, 240, 0.1);
+}
+
+[data-theme="light"] {
+    --bg-color: #f8fafc;
+    --secondary-bg: #ffffff;
+    --text-color: #1e293b;
+    --accent-color: #0891b2;
+    --border-color: rgba(8, 145, 178, 0.3);
+    --hover-bg: rgba(8, 145, 178, 0.1);
 }
 
 html {
@@ -24,6 +35,7 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
+     transition: background-color 0.3s ease, color 0.3s ease
 }
 
 .header {
@@ -101,7 +113,32 @@ body {
 }
 
 #menu-icon-container {
-    display: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-toggle {
+    width: 4rem;
+    height: 4rem;
+    background: var(--accent-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(0, 171, 240, 0.5);
+}
+
+.theme-toggle i {
+    font-size: 2rem;
+    color: #fff;
 }
 
 #menu-icon {
@@ -109,6 +146,7 @@ body {
     color: var(--text-color);
     cursor: pointer;
     transition: all 0.3s ease;
+    display: none;
 }
 
 #menu-icon:hover {
@@ -571,6 +609,58 @@ body {
     z-index: 1;
 }
 
+.services {
+    padding: 10rem 9%;
+    background: var(--secondary-bg);
+}
+
+.services-subtitle {
+    text-align: center;
+    font-size: 1.6rem;
+    color: rgba(237, 237, 237, 0.7);
+    margin-bottom: 5rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: var(--bg-color);
+    padding: 4rem 3rem;
+    border-radius: 1.5rem;
+    border: 0.2rem solid transparent;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow: 0 1.5rem 4rem rgba(0, 171, 240, 0.3);
+}
+
+.service-icon {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.service-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.service-card p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: rgba(237, 237, 237, 0.7);
+}
+
 .projects {
     padding: 10rem 9%;
     background: var(--bg-color);
@@ -578,63 +668,111 @@ body {
 
 .projects-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 4rem;
     margin-top: 5rem;
 }
 
 .project-item {
     background: var(--secondary-bg);
-    padding: 3rem;
-    border-radius: 1.2rem;
-    transition: all 0.4s ease;
-    position: relative;
-    border: 0.2rem solid transparent;
+    border-radius: 1.5rem;
     overflow: hidden;
-}
-
-.project-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 171, 240, 0.1), transparent);
-    transition: 0.5s;
-}
-
-.project-item:hover::before {
-    left: 100%;
+    transition: all 0.4s ease;
+    border: 0.2rem solid transparent;
 }
 
 .project-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 1.5rem 4rem rgba(0, 171, 240, 0.3);
     border-color: var(--accent-color);
+    box-shadow: 0 2rem 5rem rgba(0, 171, 240, 0.3);
+}
+
+.project-image {
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-item:hover .project-image img {
+    transform: scale(1.1);
 }
 
 .project-tag {
-    display: inline-block;
-    padding: 0.6rem 1.6rem;
-    background: rgba(0, 171, 240, 0.2);
-    color: var(--accent-color);
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.8rem 1.8rem;
+    background: rgba(0, 171, 240, 0.9);
+    color: #fff;
     border-radius: 2rem;
     font-size: 1.3rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    backdrop-filter: blur(10px);
 }
 
-.project-item h3 {
-    font-size: 2.4rem;
+.project-content {
+    padding: 3rem;
+}
+
+.project-content h3 {
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
     color: var(--text-color);
 }
 
-.project-item p {
-    font-size: 1.6rem;
+.project-content p {
+    font-size: 1.5rem;
     line-height: 1.8;
     color: rgba(237, 237, 237, 0.8);
+    margin-bottom: 2rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-tech span {
+    padding: 0.6rem 1.4rem;
+    background: rgba(0, 171, 240, 0.1);
+    color: var(--accent-color);
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 0.1rem solid rgba(0, 171, 240, 0.3);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 2rem;
+    background: var(--accent-color);
+    color: var(--bg-color);
+    text-decoration: none;
+    border-radius: 0.8rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 171, 240, 0.4);
+}
+
+.project-link i {
+    font-size: 1.8rem;
 }
 
 .experience {
@@ -1120,6 +1258,28 @@ body {
 
     .input-box {
     grid-template-columns: 1fr;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: 3rem 2rem;
+    }
+    
+    .projects-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-image {
+        height: 20rem;
+    }
+    
+    .theme-toggle {
+        width: 4rem;
+        height: 4rem;
+        margin-left: 1rem;
     }
 
     .footer {
