@@ -622,11 +622,10 @@ body {
 }
 
 .services-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
-    gap: 3rem;
-    max-width: 120rem;
-    margin: 0 auto;
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 30px;
+    width: 100%;
 }
 
 .service-card {
@@ -661,16 +660,34 @@ body {
     color: rgba(237, 237, 237, 0.7);
 }
 
+.service-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.dark-mode .service-box {
+    background: #161b22;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
 .projects {
     padding: 10rem 9%;
     background: var(--bg-color);
 }
 
 .projects-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    gap: 4rem;
-    margin-top: 5rem;
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 100%;
 }
 
 .project-item {
@@ -773,6 +790,19 @@ body {
 
 .project-link i {
     font-size: 1.8rem;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    width: 100%; 
+}
+
+.dark-mode .project-card {
+    background: #161b22;
 }
 
 .experience {
@@ -1322,6 +1352,10 @@ html {
 
 .projects-list {
     grid-template-columns: 1fr;
+}
+
+.services-container {
+    grid-template-columns: 1fr; 
 }
 
 .contact-info {
