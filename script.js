@@ -271,7 +271,7 @@ if (contactForm && submitBtn) {
             const result = await response.json();
 
             if (response.ok) {
-                showNotification('✨ Thank you! Your message has been sent successfully. I will get back to you soon!', 'success');
+                showNotification(' Thank you! Your message has been sent successfully. I will get back to you soon!', 'success');
                 clearForm();
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
             } else {
@@ -279,7 +279,7 @@ if (contactForm && submitBtn) {
             }
         } catch (error) {
             console.error('Error sending email:', error);
-            showNotification('❌ Oops! Something went wrong. Please try again or email me directly at chenuliv@gmail.com', 'error');
+            showNotification('Oops! Something went wrong. Please try again or email me directly at chenuliv@gmail.com', 'error');
         } finally {
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalHTML;
@@ -378,7 +378,41 @@ projectItems.forEach(item => {
     });
 });
 
-console.log('%c👋 Welcome to my Portfolio!', 'color: #00abf0; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,171,240,0.3);');
-console.log('%c💻 Built  by Chenuli Vihansa', 'color: #ededed; font-size: 16px; font-weight: 500;');
-console.log('%c🚀 Interested in the code? Check out my GitHub!', 'color: #00abf0; font-size: 14px;');
-console.log('%c📧 Contact form ready! Emails will be sent to chenuliv@gmail.com', 'color: #00abf0; font-size: 14px;');
+console.log('%c  Welcome to my Portfolio!', 'color: #00abf0; font-size: 24px; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,171,240,0.3);');
+console.log('%c  Built  by Chenuli Vihansa', 'color: #ededed; font-size: 16px; font-weight: 500;');
+console.log('%c Interested in the code? Check out my GitHub!', 'color: #00abf0; font-size: 14px;');
+console.log('%c Contact form ready! Emails will be sent to chenuliv@gmail.com', 'color: #00abf0; font-size: 14px;');
+
+window.addEventListener("load", () => {
+    document.getElementById("page-loader").style.display = "none";
+});
+
+window.addEventListener("scroll", () => {
+    const scrollProgress = document.getElementById("scroll-progress");
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    scrollProgress.style.width = (scrollTop / docHeight) * 100 + "%";
+});
+
+const backToTop = document.getElementById("back-to-top");
+window.addEventListener("scroll", () => {
+    backToTop.classList.toggle("visible", window.scrollY > 300);
+});
+backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+const typingText = document.getElementById("typing-name");
+let text = typingText.innerText;
+typingText.innerText = "";
+let i = 0;
+function typeEffect() {
+    if (i < text.length) {
+        typingText.innerText += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 100);
+    }
+}
+setTimeout(typeEffect, 1500);
+
+
