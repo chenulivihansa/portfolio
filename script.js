@@ -415,40 +415,6 @@ function typeEffect() {
 }
 setTimeout(typeEffect, 1500);
 
-const themeToggle = document.getElementById('theme-toggle');
-const themeIcon = document.getElementById('theme-icon');
-const htmlElement = document.documentElement;
 
-const currentTheme = localStorage.getItem('theme') || 'dark';
-htmlElement.setAttribute('data-theme', currentTheme);
-updateThemeIcon(currentTheme);
-
-if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = htmlElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        htmlElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeIcon(newTheme);
-        
-        themeToggle.style.transform = 'rotate(360deg)';
-        setTimeout(() => {
-            themeToggle.style.transform = '';
-        }, 300);
-    });
-}
-
-function updateThemeIcon(theme) {
-    if (themeIcon) {
-        if (theme === 'dark') {
-            themeIcon.classList.remove('bx-sun');
-            themeIcon.classList.add('bx-moon');
-        } else {
-            themeIcon.classList.remove('bx-moon');
-            themeIcon.classList.add('bx-sun');
-        }
-    }
-}
 
 
