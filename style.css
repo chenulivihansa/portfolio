@@ -133,11 +133,10 @@ body {
 }
 
 #menu-icon {
-    font-size: 3.5rem;
-    color: var(--text-color);
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-size: 35px;
+    color: var(--main-color);
     display: none;
+    cursor: pointer;
 }
 
 #menu-icon:hover {
@@ -1211,8 +1210,9 @@ body {
     }
     
     #menu-icon {
-        font-size: 3rem;
+        display: block;
     }
+
     
     .navbar {
         position: absolute;

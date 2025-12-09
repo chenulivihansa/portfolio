@@ -1,13 +1,13 @@
 const menuIcon = document.getElementById('menu-icon');
-const navbar = document.getElementById('navbar');
+const navbar = document.querySelector('.navbar');
 
 if (menuIcon && navbar) {
     menuIcon.addEventListener('click', () => {
         navbar.classList.toggle('active');
         menuIcon.classList.toggle('bx-x');
-        menuIcon.classList.toggle('bx-menu');
     });
 }
+
 
 const navLinks = document.querySelectorAll('.navbar a');
 navLinks.forEach(link => {
