@@ -403,6 +403,7 @@ backToTop.addEventListener("click", () => {
 });
 
 const typingText = document.getElementById("typing-name");
+if (typingText) {
 let text = typingText.innerText;
 typingText.innerText = "";
 let i = 0;
@@ -414,7 +415,4 @@ function typeEffect() {
     }
 }
 setTimeout(typeEffect, 1500);
-
-
-
-
+}
